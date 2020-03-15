@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/algs.iml" filepath="$PROJECT_DIR$/.idea/algs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alg/algs.iml" filepath="$PROJECT_DIR$/alg/algs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restservice/restservice.iml" filepath="$PROJECT_DIR$/restservice/restservice.iml" />
     </modules>
   </component>
 </project>
