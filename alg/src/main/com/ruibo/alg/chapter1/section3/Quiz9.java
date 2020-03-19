@@ -10,6 +10,10 @@ import java.util.regex.Pattern;
  * 1+2)*3-4)*5-6)))
  * 你的程序应该输出
  * （（1+2）*（（3-4）*（5-6）））
+ *
+ *
+ * （（3-4）*（5-6））
+ * 3-4）*5-6））
  */
 public class Quiz9 {
 
@@ -23,7 +27,8 @@ public class Quiz9 {
      * @param args
      */
     public static void main(String[] args) {
-        String[] chars = "1+2)*3-4)*5-6)))".split("");
+        String testCase = "3-4)*5-6))";
+        String[] chars = testCase.split("");
         Stack<String> operands = new Stack<>();
         Stack<String> operandsTemp = new Stack<>();
         Stack<String> operators = new Stack<>();
@@ -56,12 +61,11 @@ public class Quiz9 {
                     }
                     System.out.println(operandsTemp);
                     res = operandsTemp.pop();
-                    System.out.println(res);
                 }
             }
         }
 
-        System.out.println(res);
+        System.out.println("==="+res);
     }
 
     private static String buildTempResult(String n1, String n2, String op) {
