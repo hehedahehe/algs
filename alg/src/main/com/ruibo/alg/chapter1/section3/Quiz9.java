@@ -1,7 +1,8 @@
 package com.ruibo.alg.chapter1.section3;
 
 import java.util.Stack;
-import java.util.regex.Pattern;
+
+import static com.ruibo.alg.chapter1.section3.Tools.*;
 
 /**
  * 编写一段程序，从标准输入得到一个缺少左括号的表达式
@@ -35,7 +36,7 @@ public class Quiz9 {
         String res = null;
         for (int i = 0; i < chars.length; i++) {
             String str = chars[i];
-            if (isNum(str)) {
+            if (isOperand(str)) {
                 operands.push(str);
                 System.out.println(operands);
             } else if (isOperator(str)) {
@@ -68,21 +69,7 @@ public class Quiz9 {
         System.out.println("==="+res);
     }
 
-    private static String buildTempResult(String n1, String n2, String op) {
-        return "(" + n1 + op + n2 + ")";
-    }
 
-    private static boolean isNum(String a) {
-        return !isInvoker(a) && !isOperator(a);
-    }
-
-    private static boolean isOperator(String a) {
-        return "+".equals(a) || "-".equals(a) || "*".equals(a);
-    }
-
-    private static boolean isInvoker(String a) {
-        return ")".equals(a);
-    }
 
 
 }

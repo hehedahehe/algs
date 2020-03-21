@@ -1,10 +1,13 @@
 package com.ruibo.demo;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@RestController
 public class DemoController {
 
 	private List<Greeting> objListCache = new ArrayList<>();
@@ -16,10 +19,9 @@ public class DemoController {
 		if (objListCache.size() >= 100000) {
 			objListCache.clear();
 		} else {
-
 			objListCache.add(greeting);
-
 		}
+		System.out.println("====="+objListCache.size());
 
 		return greeting;
 	}
