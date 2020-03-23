@@ -69,5 +69,22 @@ public class TwoBinaryDemo {
         System.out.println(a7);
 
         System.out.println(a5==Integer.MAX_VALUE);
+        System.out.println(a5<<1); //-2 运行时发生溢出
+
+        byte b2 = 'a';
+        byte b3 = 'A';
+        System.out.println(b2);
+        System.out.println(b3);
+        System.out.println(b3-b2);
+        int length = "I am a teacher".length();
+        char[] cs = new char[length];
+        "I am a teacher".getChars(0,length,cs,0);
+        for(char cs1 :cs){
+            System.out.println(cs1 + "====" + (byte)cs1 + "==="+(int)cs1);
+        }
+        System.out.println(b3+32);//97
+        System.out.println((char)(b3 +32));//a
+        System.out.println((char)(b3 +320000000));//큁
+
     }
 }
