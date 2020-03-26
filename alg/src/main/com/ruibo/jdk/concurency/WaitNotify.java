@@ -10,7 +10,6 @@ import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 public class WaitNotify {
 
     public static void main(String[] args) {
-
     }
 
     public static class Worker implements Runnable{
