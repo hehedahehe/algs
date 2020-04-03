@@ -1,6 +1,5 @@
 package com.ruibo.demo.classloader;
 
-import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -8,8 +7,7 @@ import java.io.FileInputStream;
 
 public class ClassLoaderTest {
 
-	@Test
-	public void testClassLoader() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+	public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
 		//新建一个类加载器
 		MyClassLoader cl = new MyClassLoader("myClassLoader");
 		//加载类，得到Class对象
@@ -25,7 +23,7 @@ public class ClassLoaderTest {
 		}
 	}
 
-	class MyClassLoader extends ClassLoader {
+	static class MyClassLoader extends ClassLoader {
 		//类加载器的名称
 		private String name;
 		//类存放的路径

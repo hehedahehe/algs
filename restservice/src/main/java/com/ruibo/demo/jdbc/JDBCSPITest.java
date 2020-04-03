@@ -1,6 +1,5 @@
 package com.ruibo.demo.jdbc;
 
-import org.junit.Test;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,8 +8,13 @@ import java.sql.Statement;
 
 public class JDBCSPITest {
 
-	@Test
-	public void testJDBC(){
+
+	public static void main(String[] args) {
+
+	}
+
+
+	public void testJDBC() {
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet rs = null;
@@ -25,12 +29,12 @@ public class JDBCSPITest {
 			// 执行查询语句
 			rs = statement.executeQuery("select * from user");
 			// 遍历查询结果集
-			while(rs.next()){
+			while (rs.next()) {
 				String name = rs.getString("name");
 				System.out.println(name);
 			}
 
-		} catch(Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			// ...省略释放资源的代码

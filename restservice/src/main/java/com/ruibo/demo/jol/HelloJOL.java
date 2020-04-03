@@ -1,6 +1,7 @@
 package com.ruibo.demo.jol;
 
-import com.ruibo.T;
+
+import com.ruibo.demo.T;
 import org.openjdk.jol.info.ClassLayout;
 
 public class HelloJOL {
@@ -15,6 +16,5 @@ public class HelloJOL {
 		System.out.println( ClassLayout.parseInstance(o).toPrintable());
 		System.out.println("类对象=====");
 		System.out.println( ClassLayout.parseInstance(Object.class).toPrintable());
-
 	}
 }
