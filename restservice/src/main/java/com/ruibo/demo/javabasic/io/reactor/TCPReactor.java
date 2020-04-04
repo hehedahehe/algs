@@ -17,13 +17,15 @@ public class TCPReactor implements Runnable {
 
 	public TCPReactor(int port) throws IOException {
 		selector = Selector.open();
+
 		serverSocketChannel = ServerSocketChannel.open();
 		InetSocketAddress address = new InetSocketAddress(port);
 		serverSocketChannel.socket().bind(address);
 		serverSocketChannel.configureBlocking(false);
+
 		//在selector上注册事件
 		SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-		selectionKey.attach(null);
+		selectionKey.attach(new Acceptor(serverSocketChannel,selector));
 	}
 
 	@Override
