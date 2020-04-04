@@ -1,37 +1,21 @@
 package com.ruibo.demo.javabasic.io.reactor;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.ServerSocket;
-import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-public class TCPReactor implements Runnable {
+public class TCPReadReactor implements Runnable {
 
-	private final ServerSocketChannel serverSocketChannel;
-	private final Selector selector;
-
-	public TCPReactor(int port) throws IOException {
-		selector = Selector.open();
-
-		serverSocketChannel = ServerSocketChannel.open();
-		InetSocketAddress address = new InetSocketAddress(port);
-		serverSocketChannel.socket().bind(address);
-		serverSocketChannel.configureBlocking(false);
-
-		//在selector上注册事件
-		SelectionKey selectionKey = serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
-		selectionKey.attach(new Acceptor(serverSocketChannel,selector));
+	private  Selector selector;
+	public TCPReadReactor(Selector selector) {
+		this.selector = selector;
 	}
+
 
 	@Override
 	public void run() {
 		while (!Thread.interrupted()) {
-			ServerSocket serverSocket = serverSocketChannel.socket();
 			//监控事件发生
 			//处理事件
 			try {
@@ -48,8 +32,10 @@ public class TCPReactor implements Runnable {
 			Iterator<SelectionKey> it = selectionKeys.iterator();
 			while (it.hasNext()) {
 				SelectionKey selectionKey = it.next();
-				dispatch(selectionKey);
-				it.remove();
+				if(selectionKey.interestOps()==SelectionKey.OP_READ){
+					dispatch(selectionKey);
+					it.remove();
+				}
 			}
 
 		}

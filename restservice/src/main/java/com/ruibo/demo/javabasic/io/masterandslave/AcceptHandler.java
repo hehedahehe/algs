@@ -1,14 +1,12 @@
 package com.ruibo.demo.javabasic.io.masterandslave;
 
-import org.omg.SendingContext.RunTime;
-
 import java.io.IOException;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
-public class Acceptor implements Runnable {
+public class AcceptHandler implements Runnable {
 
 	private final ServerSocketChannel serverSocketChannel;
 	private final int cores = Runtime.getRuntime().availableProcessors();
@@ -20,11 +18,12 @@ public class Acceptor implements Runnable {
 
 	private int selIdex = 0;
 
-	public Acceptor(ServerSocketChannel serverSocketChannel) throws IOException {
+	public AcceptHandler(ServerSocketChannel serverSocketChannel) throws IOException {
 		this.serverSocketChannel = serverSocketChannel;
 		for (int i = 0; i < cores; i++) {
 			selectors[i] = Selector.open();
-			r[i] = new TCPSubReactor(selectors[i], serverSocketChannel, i);
+			//为selector分配reactor
+			r[i] = new TCPSubReactor(selectors[i], i);
 			t[i] = new Thread(r[i]);
 			t[i].start();
 		}
@@ -41,7 +40,7 @@ public class Acceptor implements Runnable {
 				SelectionKey sk = socketChannel.register(selectors[selIdex], SelectionKey.OP_READ);
 				selectors[selIdex].wakeup(); //使一个阻塞住的selector操作立即返回
 				r[selIdex].setRestart(false); //重启线程
-				sk.attach(new TCPHandler(sk, socketChannel));
+				sk.attach(new ReadHandler(sk, socketChannel));
 				if (++selIdex == selectors.length) {
 					selIdex = 0;
 				}

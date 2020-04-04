@@ -1,6 +1,5 @@
 package com.ruibo.demo.javabasic.io.masterandslave;
 
-import sun.jvm.hotspot.utilities.WorkerThread;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -10,7 +9,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class TCPHandler implements Runnable {
+public class ReadHandler implements Runnable {
 
 	private final SelectionKey selectionKey;
 	private final SocketChannel socketChannel;
@@ -19,7 +18,7 @@ public class TCPHandler implements Runnable {
 	private final static ThreadPoolExecutor pool = new ThreadPoolExecutor(THREAD_COUNTING, THREAD_COUNTING, 10, TimeUnit.SECONDS,
 			new LinkedBlockingDeque<>());
 
-	public TCPHandler(SelectionKey selectionKey, SocketChannel socketChannel) {
+	public ReadHandler(SelectionKey selectionKey, SocketChannel socketChannel) {
 		this.selectionKey = selectionKey;
 		this.socketChannel = socketChannel;
 		pool.setMaximumPoolSize(32);

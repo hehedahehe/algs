@@ -1,32 +1,26 @@
-package com.ruibo.demo.javabasic.io.masterandslave;
+package com.ruibo.demo.javabasic.io.reactor;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
+import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 import java.util.Set;
 
-public class TCPSubReactor implements Runnable {
+public class TCPAcceptReactor implements Runnable {
 
-	private final Selector selector;
-	private int num;
-	private volatile boolean restart;
-
-	public TCPSubReactor(Selector selector,int num) throws IOException {
+	private  Selector selector;
+	public TCPAcceptReactor(Selector selector) {
 		this.selector = selector;
-		this.num = num;
 	}
 
-	public void setRestart(boolean restart) {
-		this.restart = restart;
-	}
 
 	@Override
 	public void run() {
-		while (!Thread.interrupted() && !restart) {
+		while (!Thread.interrupted()) {
 			//监控事件发生
 			//处理事件
 			try {
@@ -43,8 +37,10 @@ public class TCPSubReactor implements Runnable {
 			Iterator<SelectionKey> it = selectionKeys.iterator();
 			while (it.hasNext()) {
 				SelectionKey selectionKey = it.next();
-				dispatch(selectionKey);
-				it.remove();
+				if(selectionKey.interestOps()==SelectionKey.OP_ACCEPT){
+					dispatch(selectionKey);
+					it.remove();
+				}
 			}
 
 		}
