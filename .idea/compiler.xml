@@ -33,11 +33,11 @@
     <bytecodeTargetLevel>
       <module name="alg" target="1.5" />
       <module name="algs" target="1.8" />
-      <module name="curator-demo" target="1.5" />
+      <module name="curator-demo" target="1.8" />
       <module name="demo" target="1.8" />
-      <module name="demo-kafka" target="1.5" />
-      <module name="demo-redis" target="1.5" />
-      <module name="demo-rocketmq" target="1.5" />
+      <module name="demo-kafka" target="1.8" />
+      <module name="demo-redis" target="1.8" />
+      <module name="demo-rocketmq" target="1.8" />
       <module name="dubbo" target="1.8" />
       <module name="dubbo-auth" target="1.8" />
       <module name="dubbo-bom" target="1.8" />
@@ -53,7 +53,7 @@
       <module name="dubbo-configcenter-etcd" target="1.8" />
       <module name="dubbo-configcenter-nacos" target="1.8" />
       <module name="dubbo-configcenter-zookeeper" target="1.8" />
-      <module name="dubbo-consumer-demo" target="1.5" />
+      <module name="dubbo-consumer-demo" target="1.8" />
       <module name="dubbo-container" target="1.8" />
       <module name="dubbo-container-api" target="1.8" />
       <module name="dubbo-container-log4j" target="1.8" />
@@ -91,7 +91,7 @@
       <module name="dubbo-monitor-default" target="1.8" />
       <module name="dubbo-parent" target="1.8" />
       <module name="dubbo-plugin" target="1.8" />
-      <module name="dubbo-provider-demo" target="1.5" />
+      <module name="dubbo-provider-demo" target="1.8" />
       <module name="dubbo-qos" target="1.8" />
       <module name="dubbo-registry" target="1.8" />
       <module name="dubbo-registry-api" target="1.8" />
@@ -143,15 +143,15 @@
       <module name="dubbo-serialization-protobuf" target="1.8" />
       <module name="dubbo-serialization-protostuff" target="1.8" />
       <module name="dubbo-serialization-test" target="1.8" />
-      <module name="hystrix-demo" target="1.5" />
+      <module name="hystrix-demo" target="1.8" />
       <module name="java-basic" target="1.8" />
       <module name="kafka-demo" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="redis-demo" target="1.8" />
-      <module name="resigter-center-demo" target="1.5" />
+      <module name="resigter-center-demo" target="1.8" />
       <module name="restservice" target="1.8" />
       <module name="rocketmq-demo" target="1.8" />
-      <module name="sentinel-demo" target="1.5" />
+      <module name="sentinel-demo" target="1.8" />
       <module name="spring-demo" target="1.8" />
       <module name="zookeeper" target="1.8" />
       <module name="zookeeper-assembly" target="1.8" />
@@ -170,6 +170,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="curator-demo" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="demo-kafka" options="-parameters" />
+      <module name="demo-redis" options="-parameters" />
+      <module name="demo-rocketmq" options="-parameters" />
       <module name="dubbo" options="-proc:none -parameters" />
       <module name="dubbo-auth" options="-proc:none -parameters" />
       <module name="dubbo-cluster" options="-proc:none -parameters" />
