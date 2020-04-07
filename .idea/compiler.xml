@@ -7,30 +7,37 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zookeeper-jute" />
+        <module name="spring-demo" />
         <module name="dubbo-consumer-demo" />
-        <module name="zookeeper-recipes-election" />
-        <module name="zookeeper-docs" />
+        <module name="demo-redis" />
+        <module name="rocketmq-demo" />
         <module name="kafka-demo" />
         <module name="zookeeper-recipes-queue" />
         <module name="zookeeper-prometheus-metrics" />
         <module name="restservice" />
         <module name="dubbo-provider-demo" />
-        <module name="rocketmq-demo" />
+        <module name="demo-rocketmq" />
+        <module name="zookeeper-docs" />
         <module name="zookeeper" />
         <module name="resigter-center-demo" />
         <module name="hystrix-demo" />
+        <module name="zookeeper-recipes-lock" />
         <module name="curator-demo" />
         <module name="java-basic" />
+        <module name="demo-kafka" />
         <module name="redis-demo" />
-        <module name="zookeeper-recipes-lock" />
+        <module name="zookeeper-recipes-election" />
         <module name="sentinel-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="alg" target="1.5" />
       <module name="algs" target="1.8" />
-      <module name="curator-demo" target="1.8" />
+      <module name="curator-demo" target="1.5" />
       <module name="demo" target="1.8" />
+      <module name="demo-kafka" target="1.5" />
+      <module name="demo-redis" target="1.5" />
+      <module name="demo-rocketmq" target="1.5" />
       <module name="dubbo" target="1.8" />
       <module name="dubbo-auth" target="1.8" />
       <module name="dubbo-bom" target="1.8" />
@@ -46,7 +53,7 @@
       <module name="dubbo-configcenter-etcd" target="1.8" />
       <module name="dubbo-configcenter-nacos" target="1.8" />
       <module name="dubbo-configcenter-zookeeper" target="1.8" />
-      <module name="dubbo-consumer-demo" target="1.8" />
+      <module name="dubbo-consumer-demo" target="1.5" />
       <module name="dubbo-container" target="1.8" />
       <module name="dubbo-container-api" target="1.8" />
       <module name="dubbo-container-log4j" target="1.8" />
@@ -84,7 +91,7 @@
       <module name="dubbo-monitor-default" target="1.8" />
       <module name="dubbo-parent" target="1.8" />
       <module name="dubbo-plugin" target="1.8" />
-      <module name="dubbo-provider-demo" target="1.8" />
+      <module name="dubbo-provider-demo" target="1.5" />
       <module name="dubbo-qos" target="1.8" />
       <module name="dubbo-registry" target="1.8" />
       <module name="dubbo-registry-api" target="1.8" />
@@ -136,15 +143,16 @@
       <module name="dubbo-serialization-protobuf" target="1.8" />
       <module name="dubbo-serialization-protostuff" target="1.8" />
       <module name="dubbo-serialization-test" target="1.8" />
-      <module name="hystrix-demo" target="1.8" />
+      <module name="hystrix-demo" target="1.5" />
       <module name="java-basic" target="1.8" />
       <module name="kafka-demo" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="redis-demo" target="1.8" />
-      <module name="resigter-center-demo" target="1.8" />
+      <module name="resigter-center-demo" target="1.5" />
       <module name="restservice" target="1.8" />
       <module name="rocketmq-demo" target="1.8" />
-      <module name="sentinel-demo" target="1.8" />
+      <module name="sentinel-demo" target="1.5" />
+      <module name="spring-demo" target="1.8" />
       <module name="zookeeper" target="1.8" />
       <module name="zookeeper-assembly" target="1.8" />
       <module name="zookeeper-client" target="1.8" />
@@ -254,6 +262,7 @@
       <module name="restservice" options="-parameters" />
       <module name="rocketmq-demo" options="-parameters" />
       <module name="sentinel-demo" options="-parameters" />
+      <module name="spring-demo" options="-parameters" />
       <module name="zookeeper" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
       <module name="zookeeper-docs" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />
       <module name="zookeeper-jute" options="-Werror -Xlint:deprecation -Xlint:unchecked -Xlint:-options -Xdoclint:-missing -Xpkginfo:always" />

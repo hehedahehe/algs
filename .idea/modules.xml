@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/curator-demo/curator-demo.iml" filepath="$PROJECT_DIR$/curator-demo/curator-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-demo/demo-kafka.iml" filepath="$PROJECT_DIR$/kafka-demo/demo-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis-demo/demo-redis.iml" filepath="$PROJECT_DIR$/redis-demo/demo-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rocketmq-demo/demo-rocketmq.iml" filepath="$PROJECT_DIR$/rocketmq-demo/demo-rocketmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-all/dubbo.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-all/dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-plugin/dubbo-auth/dubbo-auth.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-plugin/dubbo-auth/dubbo-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo/dubbo-bom/dubbo-bom.iml" filepath="$PROJECT_DIR$/dubbo/dubbo-bom/dubbo-bom.iml" />
@@ -117,6 +120,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-basic/restservice.iml" filepath="$PROJECT_DIR$/java-basic/restservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/rocketmq-demo/rocketmq-demo.iml" filepath="$PROJECT_DIR$/rocketmq-demo/rocketmq-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sentinel-demo/sentinel-demo.iml" filepath="$PROJECT_DIR$/sentinel-demo/sentinel-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-basic/spring-demo.iml" filepath="$PROJECT_DIR$/java-basic/spring-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper-server/zookeeper.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper-server/zookeeper.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper-assembly/zookeeper-assembly.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper-assembly/zookeeper-assembly.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/zookeeper-client/zookeeper-client.iml" filepath="$PROJECT_DIR$/zookeeper/zookeeper-client/zookeeper-client.iml" />
