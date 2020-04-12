@@ -12,8 +12,8 @@
     <artifactId>prarent-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>javabasic-demo</name>
-    <description>Demo project for javabasic-demo</description>
+    <name>demo parent</name>
+    <description>demo parent</description>
 
 
     <properties>
@@ -25,11 +25,12 @@
         <module>kafka-demo</module>
         <module>redis-demo</module>
         <module>hystrix-demo</module>
-        <module>dubbo-consumer-demo</module>
-        <module>dubbo-provider-demo</module>
+        <module>dubbo-provider</module>
+        <module>dubbo-provider-api</module>
         <module>sentinel-demo</module>
         <module>resigter-center-demo</module>
         <module>curator-demo</module>
+        <module>rest-demo</module>
     </modules>
 
     <dependencies>

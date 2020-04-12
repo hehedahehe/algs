@@ -2,13 +2,16 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/curator-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-comsumer-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-consumer-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dubbo-provider-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-basic" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/redis-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resigter-center-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rocketmq-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sentinel-demo" charset="UTF-8" />
   </component>

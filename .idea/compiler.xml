@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="curator-demo" />
+        <module name="dubbo-demo-provider" />
+        <module name="dubbo-provider-api" />
+        <module name="redis-demo" />
         <module name="hystrix-demo" />
         <module name="java-basic" />
-        <module name="redis-demo" />
         <module name="resigter-center-demo" />
-        <module name="dubbo-provider-demo" />
         <module name="sentinel-demo" />
         <module name="kafka-demo" />
         <module name="rocketmq-demo" />
+        <module name="rest-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +30,7 @@
       <module name="dubbo-cluster" target="1.8" />
       <module name="dubbo-common" target="1.8" />
       <module name="dubbo-compatible" target="1.8" />
+      <module name="dubbo-comsumer-demo" target="1.8" />
       <module name="dubbo-config" target="1.8" />
       <module name="dubbo-config-api" target="1.8" />
       <module name="dubbo-config-spring" target="1.8" />
@@ -51,6 +54,7 @@
       <module name="dubbo-demo-api-consumer" target="1.8" />
       <module name="dubbo-demo-api-provider" target="1.8" />
       <module name="dubbo-demo-interface" target="1.8" />
+      <module name="dubbo-demo-provider" target="1.8" />
       <module name="dubbo-demo-xml" target="1.8" />
       <module name="dubbo-demo-xml-consumer" target="1.8" />
       <module name="dubbo-demo-xml-provider" target="1.8" />
@@ -75,7 +79,8 @@
       <module name="dubbo-monitor-default" target="1.8" />
       <module name="dubbo-parent" target="1.8" />
       <module name="dubbo-plugin" target="1.8" />
-      <module name="dubbo-provider-demo" target="1.8" />
+      <module name="dubbo-provider" target="1.8" />
+      <module name="dubbo-provider-api" target="1.8" />
       <module name="dubbo-qos" target="1.8" />
       <module name="dubbo-registry" target="1.8" />
       <module name="dubbo-registry-api" target="1.8" />
@@ -133,6 +138,7 @@
       <module name="parent" target="1.8" />
       <module name="redis-demo" target="1.8" />
       <module name="resigter-center-demo" target="1.8" />
+      <module name="rest-demo" target="1.8" />
       <module name="restservice" target="1.8" />
       <module name="rocketmq-demo" target="1.8" />
       <module name="sentinel-demo" target="1.8" />
@@ -159,6 +165,7 @@
       <module name="dubbo-cluster" options="-proc:none -parameters" />
       <module name="dubbo-common" options="-proc:none -parameters" />
       <module name="dubbo-compatible" options="-proc:none -parameters" />
+      <module name="dubbo-comsumer-demo" options="-parameters" />
       <module name="dubbo-config-api" options="-proc:none -parameters" />
       <module name="dubbo-config-spring" options="-proc:none -parameters" />
       <module name="dubbo-configcenter-apollo" options="-proc:none -parameters" />
@@ -176,6 +183,7 @@
       <module name="dubbo-demo-api-consumer" options="-proc:none -parameters" />
       <module name="dubbo-demo-api-provider" options="-proc:none -parameters" />
       <module name="dubbo-demo-interface" options="-proc:none -parameters" />
+      <module name="dubbo-demo-provider" options="-parameters" />
       <module name="dubbo-demo-xml-consumer" options="-proc:none -parameters" />
       <module name="dubbo-demo-xml-provider" options="-proc:none -parameters" />
       <module name="dubbo-filter-cache" options="-proc:none -parameters" />
@@ -190,7 +198,8 @@
       <module name="dubbo-metadata-report-zookeeper" options="-proc:none -parameters" />
       <module name="dubbo-monitor-api" options="-proc:none -parameters" />
       <module name="dubbo-monitor-default" options="-proc:none -parameters" />
-      <module name="dubbo-provider-demo" options="-parameters" />
+      <module name="dubbo-provider" options="-parameters" />
+      <module name="dubbo-provider-api" options="-parameters" />
       <module name="dubbo-qos" options="-proc:none -parameters" />
       <module name="dubbo-registry-api" options="-proc:none -parameters" />
       <module name="dubbo-registry-consul" options="-proc:none -parameters" />
@@ -243,6 +252,7 @@
       <module name="kafka-demo" options="-parameters" />
       <module name="redis-demo" options="-parameters" />
       <module name="resigter-center-demo" options="-parameters" />
+      <module name="rest-demo" options="-parameters" />
       <module name="restservice" options="-parameters" />
       <module name="rocketmq-demo" options="-parameters" />
       <module name="sentinel-demo" options="-parameters" />
