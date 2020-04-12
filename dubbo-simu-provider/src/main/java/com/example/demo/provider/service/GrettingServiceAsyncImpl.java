@@ -1,4 +1,4 @@
-package com.example.demo.provider;
+package com.example.demo.provider.service;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.SynchronousQueue;

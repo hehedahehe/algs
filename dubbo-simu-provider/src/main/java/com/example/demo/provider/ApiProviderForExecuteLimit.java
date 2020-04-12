@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.example.demo.provider.service.GreetingServiceImpl;
 import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.MethodConfig;

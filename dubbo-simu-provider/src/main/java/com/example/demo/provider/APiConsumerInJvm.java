@@ -1,13 +1,13 @@
 package com.example.demo.provider;
 
+import com.example.demo.provider.service.GreetingServiceImpl;
+import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.rpc.RpcContext;
 
-import com.books.dubbo.demo.api.GreetingService;
-import com.books.dubbo.demo.provider.GreetingServiceImpl;
 
 public class APiConsumerInJvm {
 

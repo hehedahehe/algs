@@ -1,4 +1,4 @@
-package com.example.demo.provider;
+package com.example.demo.provider.service;
 
 import com.ruibo.dubbo.simusdk.api.GreetingService;
 import com.ruibo.dubbo.simusdk.api.PoJo;

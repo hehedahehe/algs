@@ -2,20 +2,19 @@ package com.example.demo.provider;
 
 import java.io.IOException;
 
+import com.example.demo.provider.service.GreetingServiceImpl;
+import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
-
-import com.books.dubbo.demo.api.GreetingService;
 
 public class ApiProvider {
 
 	public static void main(String[] args) throws IOException {
 		// 1.创建ServiceConfig实例
-		ServiceConfig<GreetingService> serviceConfig = new ServiceConfig<GreetingService>();
+		ServiceConfig<GreetingService> serviceConfig = new ServiceConfig<>();
 		// 2.设置应用程序配置
 		serviceConfig.setApplication(new ApplicationConfig("first-dubbo-provider"));
-
 		// 3.设置服务注册中心信息
 		RegistryConfig registryConfig = new RegistryConfig("zookeeper://127.0.0.1:2181");
 		serviceConfig.setRegistry(registryConfig);
