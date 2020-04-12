@@ -1,10 +1,10 @@
 package com.example.demo.provider.mydispatcher;
 
 
-import com.alibaba.dubbo.common.URL;
-import com.alibaba.dubbo.remoting.ChannelHandler;
-import com.alibaba.dubbo.remoting.Dispatcher;
-import com.alibaba.dubbo.remoting.transport.dispatcher.all.AllChannelHandler;
+import org.apache.dubbo.common.URL;
+import org.apache.dubbo.remoting.ChannelHandler;
+import org.apache.dubbo.remoting.Dispatcher;
+import org.apache.dubbo.remoting.transport.dispatcher.all.AllChannelHandler;
 
 public class MyDispatcher implements Dispatcher {
 

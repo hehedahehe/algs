@@ -10,7 +10,6 @@
 			../pom.xml
 		</relativePath> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ruibo</groupId>
 	<artifactId>dubbo-simu-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dubbo-simu-consumer</name>

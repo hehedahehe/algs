@@ -1,10 +1,10 @@
 package com.example.demo.provider;
 
-import com.alibaba.dubbo.common.json.JSON;
-import com.alibaba.dubbo.rpc.RpcContext;
 import com.ruibo.dubbo.simusdk.api.GreetingService;
 import com.ruibo.dubbo.simusdk.api.PoJo;
 import com.ruibo.dubbo.simusdk.api.Result;
+import org.apache.dubbo.common.json.JSON;
+import org.apache.dubbo.rpc.RpcContext;
 
 import java.io.IOException;
 

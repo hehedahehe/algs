@@ -7,11 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-provider-api" />
-        <module name="dubbo-demo-provider" />
         <module name="dubbo-simu-provider" />
         <module name="java-basic" />
         <module name="dubbo-simu-consumer" />
         <module name="dubbo-simu-sdk" />
+        <module name="dubbo-provider" />
         <module name="hystrix-demo" />
         <module name="rest-demo" />
       </profile>
@@ -51,7 +51,6 @@
       <module name="dubbo-demo-api-consumer" target="1.8" />
       <module name="dubbo-demo-api-provider" target="1.8" />
       <module name="dubbo-demo-interface" target="1.8" />
-      <module name="dubbo-demo-provider" target="1.8" />
       <module name="dubbo-demo-xml" target="1.8" />
       <module name="dubbo-demo-xml-consumer" target="1.8" />
       <module name="dubbo-demo-xml-provider" target="1.8" />
@@ -183,7 +182,6 @@
       <module name="dubbo-demo-api-consumer" options="-proc:none -parameters" />
       <module name="dubbo-demo-api-provider" options="-proc:none -parameters" />
       <module name="dubbo-demo-interface" options="-proc:none -parameters" />
-      <module name="dubbo-demo-provider" options="-parameters" />
       <module name="dubbo-demo-xml-consumer" options="-proc:none -parameters" />
       <module name="dubbo-demo-xml-provider" options="-proc:none -parameters" />
       <module name="dubbo-filter-cache" options="-proc:none -parameters" />

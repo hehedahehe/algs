@@ -3,6 +3,7 @@ package com.ruibo.dubbo.simusdk.test.performance;
 
 import java.util.UUID;
 
+import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
@@ -10,7 +11,6 @@ import org.apache.jmeter.protocol.java.sampler.AbstractJavaSamplerClient;
 import org.apache.jmeter.protocol.java.sampler.JavaSamplerContext;
 import org.apache.jmeter.samplers.SampleResult;
 
-import com.books.dubbo.demo.api.GreetingService;
 
 public class TestConsumerPerformance extends AbstractJavaSamplerClient {
 

@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.MethodConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 
-import com.books.dubbo.demo.api.GreetingService;
 
 public class ApiProviderForExecuteLimit {
 

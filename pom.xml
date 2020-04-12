@@ -18,9 +18,9 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <curator-framework>4.0.1</curator-framework>
-        <zookeeper.version>3.4.14</zookeeper.version>
-        <dubbo.starter.version>0.2.0</dubbo.starter.version>
+        <curator-recipes>4.3.0</curator-recipes>
+        <zookeeper.version>3.5.7</zookeeper.version>
+        <dubbo.version>2.7.6</dubbo.version>
     </properties>
 
     <modules>
@@ -39,11 +39,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
+            <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${dubbo.starter.version}</version>
+            <version>${dubbo.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.curator/curator-recipes -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-recipes</artifactId>
+            <version>${curator-recipes}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
