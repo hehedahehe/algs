@@ -11,6 +11,7 @@
     <groupId>com.ruibo</groupId>
     <artifactId>prarent-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>javabasic-demo</name>
     <description>Demo project for javabasic-demo</description>
 
@@ -18,6 +19,18 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+    <modules>
+        <module>java-basic</module>
+        <module>rocketmq-demo</module>
+        <module>kafka-demo</module>
+        <module>redis-demo</module>
+        <module>hystrix-demo</module>
+        <module>dubbo-consumer-demo</module>
+        <module>dubbo-provider-demo</module>
+        <module>sentinel-demo</module>
+        <module>resigter-center-demo</module>
+        <module>curator-demo</module>
+    </modules>
 
     <dependencies>
         <dependency>

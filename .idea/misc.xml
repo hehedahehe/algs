@@ -8,7 +8,6 @@
         <option value="$PROJECT_DIR$/curator-demo/pom.xml" />
         <option value="$PROJECT_DIR$/sentinel-demo/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-consumer-demo/pom.xml" />
         <option value="$PROJECT_DIR$/resigter-center-demo/pom.xml" />
         <option value="$PROJECT_DIR$/rocketmq-demo/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-demo/pom.xml" />

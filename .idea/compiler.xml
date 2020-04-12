@@ -6,27 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zookeeper-jute" />
-        <module name="spring-demo" />
-        <module name="dubbo-consumer-demo" />
         <module name="demo-redis" />
-        <module name="rocketmq-demo" />
         <module name="kafka-demo" />
-        <module name="zookeeper-recipes-queue" />
-        <module name="zookeeper-prometheus-metrics" />
-        <module name="restservice" />
         <module name="dubbo-provider-demo" />
         <module name="demo-rocketmq" />
-        <module name="zookeeper-docs" />
-        <module name="zookeeper" />
-        <module name="resigter-center-demo" />
         <module name="hystrix-demo" />
-        <module name="zookeeper-recipes-lock" />
+        <module name="javabasic-demo" />
+        <module name="resigter-center-demo" />
         <module name="curator-demo" />
         <module name="java-basic" />
         <module name="demo-kafka" />
         <module name="redis-demo" />
-        <module name="zookeeper-recipes-election" />
+        <module name="rocketmq-demo" />
         <module name="sentinel-demo" />
       </profile>
     </annotationProcessing>
@@ -145,6 +136,7 @@
       <module name="dubbo-serialization-test" target="1.8" />
       <module name="hystrix-demo" target="1.8" />
       <module name="java-basic" target="1.8" />
+      <module name="javabasic-demo" target="1.8" />
       <module name="kafka-demo" target="1.8" />
       <module name="parent" target="1.8" />
       <module name="redis-demo" target="1.8" />
@@ -259,6 +251,7 @@
       <module name="dubbo-serialization-test" options="-proc:none -parameters" />
       <module name="hystrix-demo" options="-parameters" />
       <module name="java-basic" options="-parameters" />
+      <module name="javabasic-demo" options="-parameters" />
       <module name="kafka-demo" options="-parameters" />
       <module name="redis-demo" options="-parameters" />
       <module name="resigter-center-demo" options="-parameters" />
