@@ -13,7 +13,7 @@
 	<groupId>com.ruibo</groupId>
 	<artifactId>dubbo-provider-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>dubbo-provider-api</name>
 	<description>Demo project for dubbo-provider-api</description>
 
 

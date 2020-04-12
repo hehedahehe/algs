@@ -13,14 +13,9 @@
 
 	<artifactId>dubbo-demo-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
+	<name>dubbo-provider-demo</name>
 	<description>Demo project for dubbo-provider-demo</description>
 
-	<properties>
-		<curator-framework>4.0.1</curator-framework>
-		<zookeeper.version>3.4.14</zookeeper.version>
-		<dubbo.starter.version>0.2.0</dubbo.starter.version>
-	</properties>
 
 	<dependencies>
 		<dependency>

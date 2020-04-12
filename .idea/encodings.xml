@@ -2,10 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/curator-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dubbo-comsumer-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dubbo-consumer-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dubbo-provider-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-simu-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-simu-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-simu-sdk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/java-basic" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-demo" charset="UTF-8" />

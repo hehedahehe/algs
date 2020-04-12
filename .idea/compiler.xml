@@ -6,16 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="curator-demo" />
-        <module name="dubbo-demo-provider" />
         <module name="dubbo-provider-api" />
-        <module name="redis-demo" />
-        <module name="hystrix-demo" />
+        <module name="dubbo-demo-provider" />
+        <module name="dubbo-simu-provider" />
         <module name="java-basic" />
-        <module name="resigter-center-demo" />
-        <module name="sentinel-demo" />
-        <module name="kafka-demo" />
-        <module name="rocketmq-demo" />
+        <module name="dubbo-simu-consumer" />
+        <module name="dubbo-simu-sdk" />
+        <module name="hystrix-demo" />
         <module name="rest-demo" />
       </profile>
     </annotationProcessing>
@@ -132,6 +129,9 @@
       <module name="dubbo-serialization-protobuf" target="1.8" />
       <module name="dubbo-serialization-protostuff" target="1.8" />
       <module name="dubbo-serialization-test" target="1.8" />
+      <module name="dubbo-simu-consumer" target="1.8" />
+      <module name="dubbo-simu-provider" target="1.8" />
+      <module name="dubbo-simu-sdk" target="1.8" />
       <module name="hystrix-demo" target="1.8" />
       <module name="java-basic" target="1.8" />
       <module name="kafka-demo" target="1.8" />
@@ -247,6 +247,9 @@
       <module name="dubbo-serialization-protobuf" options="-proc:none -parameters" />
       <module name="dubbo-serialization-protostuff" options="-proc:none -parameters" />
       <module name="dubbo-serialization-test" options="-proc:none -parameters" />
+      <module name="dubbo-simu-consumer" options="-parameters" />
+      <module name="dubbo-simu-provider" options="-parameters" />
+      <module name="dubbo-simu-sdk" options="-parameters" />
       <module name="hystrix-demo" options="-parameters" />
       <module name="java-basic" options="-parameters" />
       <module name="kafka-demo" options="-parameters" />
