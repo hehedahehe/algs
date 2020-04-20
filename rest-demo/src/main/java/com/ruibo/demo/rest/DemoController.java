@@ -9,6 +9,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 
 @RestController
 public class DemoController {
@@ -119,4 +121,16 @@ public class DemoController {
 	 * from the url zookeeper://localhost:2181/org.apache.dubbo.registry.RegistryService?application=DemoRest&dubbo=2.0.2&init=false&interface=com.ruibo.demo.dubboproviderapi.IDemoProviderService&methods=SayHello&pid=55362&qos.enable=false&register.ip=192.168.0.103&release=2.7.6&retries=0&side=consumer&sticky=false&timeout=5000&timestamp=1587098320356
 	 * to the consumer 192.168.0.103 use dubbo version 2.7.6
 	 */
+
+
+	@GetMapping(value = {"/run"})
+	public Object run(HttpServletRequest request) {
+		DemoRestApplication.run = true;
+		return "succ";
+	}
+	@GetMapping(value = {"/stop"})
+	public Object stop(HttpServletRequest request) {
+		DemoRestApplication.run = false;
+		return "succ";
+	}
 }
