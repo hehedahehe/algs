@@ -4,9 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider-api/dubbo-provider-api.iml" filepath="$PROJECT_DIR$/dubbo-provider-api/dubbo-provider-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubbo-simu-consumer/dubbo-simu-consumer.iml" filepath="$PROJECT_DIR$/dubbo-simu-consumer/dubbo-simu-consumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubbo-simu-provider/dubbo-simu-provider.iml" filepath="$PROJECT_DIR$/dubbo-simu-provider/dubbo-simu-provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dubbo-simu-sdk/dubbo-simu-sdk.iml" filepath="$PROJECT_DIR$/dubbo-simu-sdk/dubbo-simu-sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/hystrix-demo/hystrix-demo.iml" filepath="$PROJECT_DIR$/hystrix-demo/hystrix-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeper/parent.iml" filepath="$PROJECT_DIR$/zookeeper/parent.iml" />

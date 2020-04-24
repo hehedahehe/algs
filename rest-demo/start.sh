@@ -7,4 +7,5 @@ java \
 -XX:+UseParNewGC \
 -XX:+HeapDumpOnOutOfMemoryError \
 -XX:HeapDumpPath=/Users/liruibo/Documents/code/temp/demo-heap.dump \
+-XX:NativeMemoryTracking=summary \
 -jar target/demo-0.0.1-SNAPSHOT.jar

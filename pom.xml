@@ -31,9 +31,6 @@
         <module>dubbo-provider</module>
         <module>dubbo-provider-api</module>
         <module>rest-demo</module>
-        <module>dubbo-simu-provider</module>
-        <module>dubbo-simu-sdk</module>
-        <module>dubbo-simu-consumer</module>
     </modules>
 
     <dependencies>
@@ -71,14 +68,6 @@
         </dependency>
 
     </dependencies>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
     <repositories>
         <repository>

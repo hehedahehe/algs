@@ -13,10 +13,7 @@
         <option value="$PROJECT_DIR$/dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-provider-api/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-simulate/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-simu-sdk/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-simulate-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-simu-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-simu-provider/pom.xml" />
         <option value="$PROJECT_DIR$/rest-demo/pom.xml" />
       </list>
     </option>

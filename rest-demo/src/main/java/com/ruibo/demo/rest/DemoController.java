@@ -2,7 +2,7 @@ package com.ruibo.demo.rest;
 
 import com.google.common.collect.ImmutableMap;
 import com.ruibo.demo.dubboproviderapi.IDemoProviderService;
-import com.ruibo.dubbo.simusdk.api.GreetingService;
+//import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
