@@ -14,6 +14,8 @@ dubbo:
   registry:
 ###########注册中心地址#####################
     address: zookeeper://localhost:2181
+#  log4j:
+#    level: DEBUG
 
 spring:
   output:

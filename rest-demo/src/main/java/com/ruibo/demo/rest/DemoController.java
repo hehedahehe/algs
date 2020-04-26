@@ -2,7 +2,6 @@ package com.ruibo.demo.rest;
 
 import com.google.common.collect.ImmutableMap;
 import com.ruibo.demo.dubboproviderapi.IDemoProviderService;
-//import com.ruibo.dubbo.simusdk.api.GreetingService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,8 +16,10 @@ public class DemoController {
 
 	Logger logger = LoggerFactory.getLogger(DemoController.class);
 
-	@Reference(retries = 0)
+	@Reference(version = "1.0", retries = 0)
 	private IDemoProviderService providerService;
+	@Reference(version = "2.0", retries = 0)
+	private IDemoProviderService providerServiceSpeed;
 //	@Reference
 //	private GreetingService greetingService;
 
@@ -57,7 +58,6 @@ public class DemoController {
 	@GetMapping("/sayHi")
 	public Object getHelloResponse(String name) {
 		try {
-			String resFromProvider = providerService.SayHello(name);
 			/**
 			 * 1.   org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker#invoke(org.apache.dubbo.rpc.Invocation)
 			 * 2. org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor#intercept(org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker, org.apache.dubbo.rpc.Invocation)
@@ -99,11 +99,13 @@ public class DemoController {
 			 *                     ", please check status of providers(disabled, not registered or in blacklist).");
 			 *         }
 			 */
-//		String resFromProviderTwo =  greetingService.sayHello(name);
-			String resFromProviderTwo = "";
+			String resFromProvider = providerService.SayHello(name);
+//			String resFromProvider = "";
+			String resFromProviderTwo = providerServiceSpeed.SayHello(name);
+//		String resFromProviderTwo =  "";
 			return ImmutableMap.of(
-					"resFromProvider", resFromProvider,
-					"resFromProviderTwo", resFromProviderTwo
+					"DemoProviderServiceImpl", resFromProvider,
+					"DemoProviderServiceSpeedImpl", resFromProviderTwo
 			);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -112,6 +114,7 @@ public class DemoController {
 		return "error";
 
 	}
+
 	/**
 	 * org.springframework.beans.factory.BeanCreationException:
 	 * Error creating bean with name 'demoController':
@@ -128,6 +131,7 @@ public class DemoController {
 		DemoRestApplication.run = true;
 		return "succ";
 	}
+
 	@GetMapping(value = {"/stop"})
 	public Object stop(HttpServletRequest request) {
 		DemoRestApplication.run = false;

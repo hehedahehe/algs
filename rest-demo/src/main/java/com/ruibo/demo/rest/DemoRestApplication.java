@@ -1,5 +1,6 @@
 package com.ruibo.demo.rest;
 
+import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cglib.proxy.Enhancer;
@@ -14,33 +15,34 @@ import java.util.Random;
 
 /**
  * /**
- *  * CommandLine flags:
- *  * -XX:+CMSScavengeBeforeRemark
- *  * -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
- *  * -XX:GCLogFileSize=10485760
- *  * -XX:+UseGCLogFileRotation
- *  * -XX:+HeapDumpOnOutOfMemoryError
- *  * -XX:HeapDumpPath=/med/share/nr-daijia-oom.dump -XX:InitialHeapSize=2147483648
- *  * -XX:MaxHeapSize=2147483648
- *  * -XX:MaxNewSize=348966912
- *  * -XX:MaxTenuringThreshold=6
- *  * -XX:NewSize=348966912
- *  * -XX:NumberOfGCLogFiles=10
- *  * -XX:OldPLABSize=16 -XX:OldSize=697933824
- *  * -XX:+PrintFlagsFinal
- *  * -XX:+PrintGC
- *  * -XX:+PrintGCDateStamps
- *  * -XX:+PrintGCDetails
- *  * -XX:+PrintGCTimeStamps
- *  * -XX:+PrintStringTableStatistics
- *  * -XX:ThreadStackSize=256
- *  * -XX:+UseCMSInitiatingOccupancyOnly
- *  * -XX:+UseCompressedClassPointers
- *  * -XX:+UseCompressedOops
- *  * -XX:ParallelGCThreads=4
- *  * -XX:+UseConcMarkSweepGC
- *  * -XX:+UseParNewGC
- *  */
+ * * CommandLine flags:
+ * * -XX:+CMSScavengeBeforeRemark
+ * * -XX:+ExplicitGCInvokesConcurrentAndUnloadsClasses
+ * * -XX:GCLogFileSize=10485760
+ * * -XX:+UseGCLogFileRotation
+ * * -XX:+HeapDumpOnOutOfMemoryError
+ * * -XX:HeapDumpPath=/med/share/nr-daijia-oom.dump -XX:InitialHeapSize=2147483648
+ * * -XX:MaxHeapSize=2147483648
+ * * -XX:MaxNewSize=348966912
+ * * -XX:MaxTenuringThreshold=6
+ * * -XX:NewSize=348966912
+ * * -XX:NumberOfGCLogFiles=10
+ * * -XX:OldPLABSize=16 -XX:OldSize=697933824
+ * * -XX:+PrintFlagsFinal
+ * * -XX:+PrintGC
+ * * -XX:+PrintGCDateStamps
+ * * -XX:+PrintGCDetails
+ * * -XX:+PrintGCTimeStamps
+ * * -XX:+PrintStringTableStatistics
+ * * -XX:ThreadStackSize=256
+ * * -XX:+UseCMSInitiatingOccupancyOnly
+ * * -XX:+UseCompressedClassPointers
+ * * -XX:+UseCompressedOops
+ * * -XX:ParallelGCThreads=4
+ * * -XX:+UseConcMarkSweepGC
+ * * -XX:+UseParNewGC
+ */
+@EnableDubbo
 @SpringBootApplication
 public class DemoRestApplication {
 
@@ -49,6 +51,9 @@ public class DemoRestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoRestApplication.class, args);
+	}
+
+	private static void demoThread() {
 		new Thread(() -> {
 			System.out.println("线程名称====" + Thread.currentThread());
 			while (true) {
@@ -124,7 +129,7 @@ public class DemoRestApplication {
 	};
 
 	/**
-	 *  -XX:MaxMetaspaceSize=10m
+	 * -XX:MaxMetaspaceSize=10m
 	 * 猜一下它的GC特征
 	 */
 	static Runnable genConstantsGCMetaSpace2 = () -> {
@@ -141,15 +146,15 @@ public class DemoRestApplication {
 	 * Dumping heap to /Users/liruibo/Documents/code/temp/demo-heap.dump ...
 	 * Heap dump file created [606240858 bytes in 5.096 secs]
 	 * Exception in thread "Thread-3" java.lang.OutOfMemoryError: Java heap space
-	 * 	at java.util.LinkedList.linkLast(LinkedList.java:142)
-	 * 	at java.util.LinkedList.add(LinkedList.java:338)
-	 * 	at com.example.demo.DemoApplication.lambda$static$4(DemoApplication.java:131)
-	 * 	at com.example.demo.DemoApplication$$Lambda$11/6566818.run(Unknown Source)
-	 * 	at com.example.demo.DemoApplication.lambda$main$0(DemoApplication.java:61)
-	 * 	at com.example.demo.DemoApplication$$Lambda$447/1205406622.run(Unknown Source)
-	 * 	at java.lang.Thread.run(Thread.java:748)
-	 *
-	 * 	2020-04-11T20:02:36.629-0800: 40.773: [Full GC (Allocation Failure) 2020-04-11T20:02:36.629-0800: 40.773: [CMS: 307199K->307199K(307200K), 0.6614650 secs] 399359K->399359K(399360K), [Metaspace: 34285K->34285K(1081344K)], 0.6615536 secs] [Times: user=0.65 sys=0.01, real=0.67 secs]
+	 * at java.util.LinkedList.linkLast(LinkedList.java:142)
+	 * at java.util.LinkedList.add(LinkedList.java:338)
+	 * at com.example.demo.DemoApplication.lambda$static$4(DemoApplication.java:131)
+	 * at com.example.demo.DemoApplication$$Lambda$11/6566818.run(Unknown Source)
+	 * at com.example.demo.DemoApplication.lambda$main$0(DemoApplication.java:61)
+	 * at com.example.demo.DemoApplication$$Lambda$447/1205406622.run(Unknown Source)
+	 * at java.lang.Thread.run(Thread.java:748)
+	 * <p>
+	 * 2020-04-11T20:02:36.629-0800: 40.773: [Full GC (Allocation Failure) 2020-04-11T20:02:36.629-0800: 40.773: [CMS: 307199K->307199K(307200K), 0.6614650 secs] 399359K->399359K(399360K), [Metaspace: 34285K->34285K(1081344K)], 0.6615536 secs] [Times: user=0.65 sys=0.01, real=0.67 secs]
 	 * 2020-04-11T20:02:37.297-0800: 41.441: [Full GC (Allocation Failure) 2020-04-11T20:02:37.297-0800: 41.441: [CMS: 307199K->307199K(307200K), 0.7001509 secs] 399359K->399359K(399360K), [Metaspace: 34286K->34286K(1081344K)], 0.7002667 secs] [Times: user=0.68 sys=0.01, real=0.70 secs]
 	 * 2020-04-11T20:02:37.998-0800: 42.141: [Full GC (Allocation Failure) 2020-04-11T20:02:37.998-0800: 42.141: [CMS: 307199K->307199K(307200K), 0.6757992 secs] 399359K->399359K(399360K), [Metaspace: 34286K->34286K(1081344K)], 0.6758864 secs] [Times: user=0.66 sys=0.01, real=0.68 secs]
 	 * 2020-04-11T20:02:42.394-0800: 46.538: [Full GC (Allocation Failure) 2020-04-11T20:02:42.394-0800: 46.538: [CMS (concurrent mode failure): 307199K->307199K(307200K), 0.6747018 secs] 399359K->399359K(399360K), [Metaspace: 34286K->34286K(1081344K)], 0.6748437 secs] [Times: user=0.66 sys=0.01, real=0.67 secs]
@@ -159,7 +164,7 @@ public class DemoRestApplication {
 	 * str对象太大 Heap装不下-》fullGC无效 /OOM
 	 * metaspace回收不掉
 	 */
-	static Runnable genGCHeap= () -> {
+	static Runnable genGCHeap = () -> {
 		List<String> strs = new LinkedList<>();
 		int i = 0;
 		while (run) {

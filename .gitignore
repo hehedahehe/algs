@@ -27,5 +27,8 @@ target/
 /.nb-gradle/
 build/
 
+*.log.zip
+*.log
+
 ### VS Code ###
 .vscode/
