@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/dubbo-simulate/pom.xml" />
         <option value="$PROJECT_DIR$/dubbo-simulate-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/rest-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul-demo/pom.xml" />
       </list>
     </option>
   </component>
