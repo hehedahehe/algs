@@ -16,3 +16,8 @@ spring:
   output:
     ansi:
       enabled: always
+
+logging:
+  level:
+    root: info
+    com.netflix.hystrix.strategy.properties.HystrixPropertiesChainedProperty: info

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Calendar;
 
 
 @RestController
@@ -16,9 +17,9 @@ public class DemoController {
 
 	Logger logger = LoggerFactory.getLogger(DemoController.class);
 
-	@Reference(version = "1.0", retries = 0)
+//	@Reference(version = "1.0", retries = 0)
 	private IDemoProviderService providerService;
-	@Reference(version = "2.0", retries = 0)
+//	@Reference(version = "2.0", retries = 0)
 	private IDemoProviderService providerServiceSpeed;
 //	@Reference
 //	private GreetingService greetingService;
@@ -137,4 +138,43 @@ public class DemoController {
 		DemoRestApplication.run = false;
 		return "succ";
 	}
+
+//创建"视图" 粒度精细到天
+
+	//取天的最大/最小值数据
+	//上卷到月 计算滴滴/e代驾的月平均数据
+
+	/**
+	 * 使用方式参照
+	 * com.guazi.nr.daijia.tools.TimeToolsTest#testGetMonth()
+	 *
+	 * @param offset
+	 * @return
+	 */
+	static public long getMonthBeginTime(int offset) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.MONTH, calendar.get(Calendar.MONTH) + offset);
+		calendar.set(Calendar.DAY_OF_MONTH, 1);
+		calendar.set(Calendar.HOUR_OF_DAY, 0);
+		calendar.set(Calendar.MINUTE, 0);
+		calendar.set(Calendar.SECOND, 0);
+		return calendar.getTimeInMillis();
+	}
+	/**
+	 * 使用方式参照
+	 * com.guazi.nr.daijia.tools.TimeToolsTest#testGetMonth()
+	 *
+	 * @param offset
+	 * @return
+	 */
+	static public long getMonthEndTime(int offset) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.set(Calendar.MONTH, calendar.get(Calendar.MONTH) + offset);
+		calendar.set(Calendar.DAY_OF_MONTH, calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
+		calendar.set(Calendar.HOUR_OF_DAY, calendar.getActualMaximum(Calendar.HOUR_OF_DAY));
+		calendar.set(Calendar.MINUTE, calendar.getActualMaximum(Calendar.MINUTE));
+		calendar.set(Calendar.SECOND, calendar.getActualMaximum(Calendar.SECOND));
+		return calendar.getTimeInMillis();
+	}
+
 }

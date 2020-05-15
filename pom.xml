@@ -31,6 +31,7 @@
         <module>dubbo-provider</module>
         <module>dubbo-provider-api</module>
         <module>rest-demo</module>
+        <module>jmeter-demo</module>
     </modules>
 
     <dependencies>

@@ -51,6 +51,7 @@ public class DemoRestApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoRestApplication.class, args);
+		new NativeDemo().testGetMaxDirectMemory();
 	}
 
 	private static void demoThread() {
@@ -175,6 +176,7 @@ public class DemoRestApplication {
 
 	/**
 	 * 测试堆外内存 https://cloud.tencent.com/developer/article/1480371
+	 * https://juejin.im/post/5c9ced366fb9a070e344c614
 	 */
 
 
