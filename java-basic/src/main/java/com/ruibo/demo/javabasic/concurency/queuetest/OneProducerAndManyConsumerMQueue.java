@@ -12,6 +12,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * vs
  * 组内多播
  * kafka如何实现
+ *
+ * 引入偏移量的思想
  */
 public class OneProducerAndManyConsumerMQueue implements IMQueue {
 
