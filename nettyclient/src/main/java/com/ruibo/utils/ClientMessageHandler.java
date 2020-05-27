@@ -26,6 +26,8 @@ public class ClientMessageHandler extends ServerMessageHandler {
 	 * 这里userEventTriggered()主要是在一些用户事件触发时被调用，这里我们定义的事件是进行心跳检测的
 	 * ping和pong消息，当前触发器会在指定的触发器指定的时间返回内如果客户端没有被读取消息或者没有写入
 	 * 消息到管道，则会触发当前方法
+	 *
+	 * userEventTriggered()方法主要是在客户端被闲置一定时间后，其会根据其读取或者写入消息的限制时长来选择性的触发读取或写入事件。
 	 */
 	@Override
 	public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
