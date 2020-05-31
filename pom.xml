@@ -11,6 +11,7 @@
     <groupId>com.ruibo</groupId>
     <artifactId>prarent-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>javabasic-demo</name>
     <description>Demo project for javabasic-demo</description>
 
@@ -18,6 +19,10 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
+    <modules>
+        <module>java-basic</module>
+    </modules>
 
     <dependencies>
         <dependency>
