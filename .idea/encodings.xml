@@ -12,6 +12,8 @@
     <file url="file://$PROJECT_DIR$/nettyclient" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nettyserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shardingsphere-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shardingspheredemo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul-demo" charset="UTF-8" />
   </component>
 </project>

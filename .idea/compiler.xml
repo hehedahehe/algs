@@ -11,6 +11,7 @@
         <module name="hystrix-demo" />
         <module name="java-basic" />
         <module name="jmeter-demo" />
+        <module name="shardingsphere-demo" />
         <module name="nettyserver" />
         <module name="zuul-demo" />
         <module name="javabasic-demo" />
@@ -25,9 +26,11 @@
       <module name="hystrix-demo" target="1.8" />
       <module name="javabasic-demo" target="1.8" />
       <module name="jmeter-demo" target="1.8" />
-      <module name="nettyclient" target="1.7" />
+      <module name="nettyclient" target="1.8" />
       <module name="nettyserver" target="1.7" />
       <module name="rest-demo" target="1.8" />
+      <module name="shardingsphere-demo" target="1.8" />
+      <module name="shardingspheredemo" target="1.8" />
       <module name="zuul-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -39,6 +42,7 @@
       <module name="javabasic-demo" options="-parameters" />
       <module name="jmeter-demo" options="-parameters" />
       <module name="rest-demo" options="-parameters" />
+      <module name="shardingsphere-demo" options="-parameters" />
       <module name="zuul-demo" options="-parameters" />
     </option>
   </component>
