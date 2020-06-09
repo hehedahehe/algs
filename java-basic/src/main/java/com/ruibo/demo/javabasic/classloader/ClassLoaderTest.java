@@ -16,7 +16,8 @@ public class ClassLoaderTest {
 	 * @throws InstantiationException
 	 */
 	public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
-		new ClassLoaderTest().test();
+//		new ClassLoaderTest().test();
+		new ClassLoaderTest().test2();
 	}
 
 
@@ -28,7 +29,23 @@ public class ClassLoaderTest {
 		//得到类的实例
 		Animal animal = (Animal) clazz.newInstance();
 		animal.say();
+
+		Animal myAnimal = new Animal();
+		myAnimal.say();
+		boolean equalClass = myAnimal.getClass().equals(animal.getClass());
+		System.out.println(equalClass);
+
+		System.out.println(myAnimal instanceof com.ruibo.demo.javabasic.classloader.Animal);
 	}
+
+	public void test2() throws ClassNotFoundException, IllegalAccessException, InstantiationException {
+		//新建一个类加载器
+		MyClassLoader cl = new MyClassLoader("myClassLoader");
+		//加载类，得到Class对象
+		Object o = cl.loadClass("com.ruibo.demo.javabasic.classloader.Animal").newInstance();
+		System.out.println(o instanceof com.ruibo.demo.javabasic.classloader.Animal);
+	}
+
 
 
 	class MyClassLoader extends ClassLoader {
