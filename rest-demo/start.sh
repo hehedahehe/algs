@@ -1,5 +1,5 @@
 java \
--Xmx1024m -Xms100m -Xmn100m -XX:MaxMetaspaceSize=40m \
+-Xmx10m -Xms10m -Xmn10m -XX:MaxMetaspaceSize=40m \
 -XX:MaxDirectMemorySize=60M \
 -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime \
 -Xloggc:/Users/liruibo/Documents/code/temp/demo-gc.log \
@@ -9,5 +9,6 @@ java \
 -XX:+HeapDumpOnOutOfMemoryError \
 -XX:HeapDumpPath=../rest-demo-heap.dump \
 -XX:NativeMemoryTracking=summary \
+-XX:ErrorFile=../log/java_error_%p.log \
 -jar target/rest-demo-0.0.1-SNAPSHOT.jar
 

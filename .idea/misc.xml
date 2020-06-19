@@ -3,27 +3,9 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/restservice/pom.xml" />
-        <option value="$PROJECT_DIR$/hystrix-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-provider-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/resigter-center-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo/pom.xml" />
-        <option value="$PROJECT_DIR$/java-basic/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-provider/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-provider-api/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-simulate/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-simulate-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/rest-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/zuul-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/jmeter-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/nettyclient/pom.xml" />
-        <option value="$PROJECT_DIR$/nettyserver/pom.xml" />
-        <option value="$PROJECT_DIR$/shardingsphere-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$" />
-  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

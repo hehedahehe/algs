@@ -12,6 +12,7 @@
     <artifactId>prarent-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>demo parent</name>
     <description>demo parent</description>
 
