@@ -1,4 +1,4 @@
-package com.ruibo.demo.javabasic.concurency.lock;
+package com.ruibo.demo.javabasic.concurency.syndemo;
 
 import org.openjdk.jol.info.ClassLayout;
 

@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider/dubbo-demo-provider.iml" filepath="$PROJECT_DIR$/dubbo-provider/dubbo-demo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/dubbo-provider-api/dubbo-provider-api.iml" filepath="$PROJECT_DIR$/dubbo-provider-api/dubbo-provider-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/for-interview.iml" filepath="$PROJECT_DIR$/for-interview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hystrix-demo/hystrix-demo.iml" filepath="$PROJECT_DIR$/hystrix-demo/hystrix-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hutool-demo/hutool-demo.iml" filepath="$PROJECT_DIR$/hutool-demo/hutool-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basic/java-basic.iml" filepath="$PROJECT_DIR$/java-basic/java-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/jmeter-demo/jmeter-demo.iml" filepath="$PROJECT_DIR$/jmeter-demo/jmeter-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis-demo/redis-demo.iml" filepath="$PROJECT_DIR$/redis-demo/redis-demo.iml" />

@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.ruibo</groupId>
-        <artifactId>prarent-demo</artifactId>
+        <artifactId>for-interview</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>
             ../pom.xml
@@ -16,57 +16,8 @@
     <name>redis-demo</name>
     <description>Demo project for demo rest</description>
 
-    <properties>
-        <hystrix.version>1.5.18</hystrix.version>
-        <hystrix-metrics-event-stream.version>1.5.18</hystrix-metrics-event-stream.version>
-    </properties>
-
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.ruibo</groupId>
-            <artifactId>dubbo-provider-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <!--		<dependency>-->
-        <!--			<groupId>com.ruibo</groupId>-->
-        <!--			<artifactId>dubbo-simu-sdk</artifactId>-->
-        <!--			<version>0.0.1-SNAPSHOT</version>-->
-        <!--		</dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.apache.dubbo/dubbo-spring-boot-starter -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>${dubbo.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.connector.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-core</artifactId>
-            <version>${hystrix.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.netflix.hystrix</groupId>
-            <artifactId>hystrix-metrics-event-stream</artifactId>
-            <version>${hystrix-metrics-event-stream.version}</version>
-        </dependency>
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -77,6 +28,11 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.3.2</version>
         </dependency>
     </dependencies>
 

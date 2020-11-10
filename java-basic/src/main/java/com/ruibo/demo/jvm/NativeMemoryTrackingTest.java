@@ -24,7 +24,7 @@ import sun.misc.Unsafe;
         // }
 
         ByteBuffer.allocateDirect(_1MB);
-        System.out.println(getDirectBufferPoolMBean().getMemoryUsed() / 1024.0 / 1024.0);
-        System.out.println(getNioBufferPool().getMemoryUsed() / 1024.0 / 1024.0);
+//        System.out.println(getDirectBufferPoolMBean().getMemoryUsed() / 1024.0 / 1024.0);
+//        System.out.println(getNioBufferPool().getMemoryUsed() / 1024.0 / 1024.0);
     }
  }

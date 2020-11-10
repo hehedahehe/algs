@@ -1,4 +1,4 @@
-package com.ruibo.demo.javabasic.concurency;
+package com.ruibo.demo.javabasic.concurency.syndemo;
 
 public class SynAndVolatileDemo {
 	/**

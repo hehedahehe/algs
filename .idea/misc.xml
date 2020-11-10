@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/drools-demo/pom.xml" />
         <option value="$PROJECT_DIR$/statemechine-demo/pom.xml" />
         <option value="$PROJECT_DIR$/shardingsphere-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/hutool-demo/pom.xml" />
       </list>
     </option>
   </component>
