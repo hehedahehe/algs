@@ -9,12 +9,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.ruibo</groupId>
-    <artifactId>prarent-demo</artifactId>
+    <artifactId>for-interview</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>demo parent</name>
-    <description>demo parent</description>
+    <name>for-interview</name>
+    <description>for-interview</description>
 
 
     <properties>

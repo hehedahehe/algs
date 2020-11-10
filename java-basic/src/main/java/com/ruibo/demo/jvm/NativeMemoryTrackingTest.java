@@ -1,4 +1,7 @@
+package com.ruibo.demo.jvm;
+
 import java.lang.reflect.Field;
+import java.nio.ByteBuffer;
 
 import sun.misc.PostVMInitHook;
 import sun.misc.Unsafe;
