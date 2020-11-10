@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dubbo-demo-provider" />
-        <module name="javabasic-demo" />
+        <module name="rest-demo" />
         <module name="hystrix-demo" />
         <module name="jmeter-demo" />
         <module name="dubbo-provider-api" />
-        <module name="rest-demo" />
+        <module name="javabasic-demo" />
+        <module name="redis-demo" />
+        <module name="dubbo-demo-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="javabasic-demo" target="1.8" />
       <module name="jmeter-demo" target="1.8" />
       <module name="prarent-demo" target="1.8" />
+      <module name="redis-demo" target="1.8" />
       <module name="rest-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,6 +33,7 @@
       <module name="hystrix-demo" options="-parameters" />
       <module name="javabasic-demo" options="-parameters" />
       <module name="jmeter-demo" options="-parameters" />
+      <module name="redis-demo" options="-parameters" />
       <module name="rest-demo" options="-parameters" />
     </option>
   </component>

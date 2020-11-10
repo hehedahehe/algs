@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/java-basic/javabasic-demo.iml" filepath="$PROJECT_DIR$/java-basic/javabasic-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jmeter-demo/jmeter-demo.iml" filepath="$PROJECT_DIR$/jmeter-demo/jmeter-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/prarent-demo.iml" filepath="$PROJECT_DIR$/prarent-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis-demo/redis-demo.iml" filepath="$PROJECT_DIR$/redis-demo/redis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-demo/rest-demo.iml" filepath="$PROJECT_DIR$/rest-demo/rest-demo.iml" />
     </modules>
   </component>
