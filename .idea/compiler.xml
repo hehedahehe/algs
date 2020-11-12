@@ -28,7 +28,7 @@
       <module name="java-basic" target="1.8" />
       <module name="jmeter-demo" target="1.5" />
       <module name="redis-demo" target="1.8" />
-      <module name="rest-demo" target="1.5" />
+      <module name="rest-demo" target="1.8" />
       <module name="shardingsphere-demo" target="1.8" />
       <module name="statemechine-demo" target="1.8" />
     </bytecodeTargetLevel>

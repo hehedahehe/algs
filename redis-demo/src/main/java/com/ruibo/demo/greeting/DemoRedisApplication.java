@@ -20,6 +20,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * https://blog.csdn.net/u014042066/article/details/72778440
+ * https://www.bookstack.cn/read/redisson-wiki-zh/spilt.4.8.-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81%E5%92%8C%E5%90%8C%E6%AD%A5%E5%99%A8.md
+ * http://redis.cn/topics/distlock.html
  */
 @EnableDubbo
 @SpringBootApplication
@@ -31,6 +33,7 @@ public class DemoRedisApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoRedisApplication.class, args);
 		Config config = new Config();
+//		config.useSingleServer().setAddress()
 		config.useSentinelServers()
 				.addSentinelAddress("127.0.0.1:6369","127.0.0.1:6379", "127.0.0.1:6389")
 				.setMasterName("masterName")
